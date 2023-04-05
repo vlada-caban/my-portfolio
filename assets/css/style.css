@@ -1,46 +1,95 @@
 
  * {
-     padding: 0;
-     margin: 0;
-    
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
  }
 
 body {
     background-color: #BAC9C3;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    border: 0;
 }
 
 header {
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    width: 100%;
+    height: 60px;
     background-color: white;
+    position: fixed;
+    justify-content: space-between;
+    border-bottom: 5px solid rgb(20, 94, 75);
 }
 
-#logo {
-    width: 25%;
+header h1 {
+    font-size: 30px;
+    margin: 2%;
 }
 
-#main-navigation {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+nav {
+    margin: 2%;
 }
 
-#main-navigation ul {
+nav ul {
+    display: flex;
     list-style-type: none;
+    gap: 10px;
 }
 
-#main-navigation li {
-    display: inline-block;
-    margin-left: 25px;
+nav li {
+    background: #BAC9C3;
+    padding: 5px;
 }
 
-#main-navigation a{
+nav a{
     color:black;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
     padding: 5px;
+}
+
+main {
+    padding-top: 100px;
+}
+
+.about-me {
+    display: flex;
+    width: 100%;
+}
+
+.about-me-title,
+.projects-title {
+    /* margin: 20px;*/
+    padding: 5%;  
+    width: 200px;
+    height: 200px;
+    border-right: 2px solid black;
+}
+
+.about-me-title h2,
+.projects-title h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.about-me-content {
+    display: flex;
+}
+
+.about-me-content img {
+    padding-left: 2%;
+border-radius: 10%;
+width: 50%;
+height: 50%;
+}
+
+.about-me-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 3%;
+}
+
+.projects {
+    display: flex;
+    width: 100%;
 }
