@@ -1,27 +1,26 @@
-
- * {
+* {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
- }
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 body {
-    background-color: #BAC9C3;
+    background-color: #f2e9dc;
     margin: 0;
     border: 0;
 }
 
 header {
-    display:flex;
+    display: flex;
     width: 100%;
-    height: 60px;
-    background-color: white;
+    height: 7%;
+    background-color: #91c499;
     position: fixed;
     justify-content: space-between;
-    border-bottom: 5px solid rgb(20, 94, 75);
+    border-bottom: 5px solid #595959;
 }
 
 header h1 {
-    font-size: 30px;
+    font-size: 200%;
     margin: 2%;
 }
 
@@ -32,55 +31,64 @@ nav {
 nav ul {
     display: flex;
     list-style-type: none;
-    gap: 10px;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-nav li {
-    background: #BAC9C3;
-    padding: 5px;
-}
-
-nav a{
-    color:black;
+nav a {
+    color: black;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 18px;
-    padding: 5px;
+    background: #8b9c91;
+    padding: 10px;
+   }
+
+nav a:hover {
+    background: #595959;
 }
 
 main {
     padding-top: 100px;
 }
 
-.about-me {
+.about-me, 
+.projects,
+.contact {
     display: flex;
     width: 100%;
 }
 
 .about-me-title,
-.projects-title {
+.projects-title,
+.contact-title {
     /* margin: 20px;*/
-    padding: 5%;  
-    width: 200px;
-    height: 200px;
+    width: 25%;
+    padding: 5%; 
+    /* width: 200px;
+    height: 200px;  */
     border-right: 2px solid black;
+    white-space: nowrap;
 }
 
 .about-me-title h2,
-.projects-title h2 {
+.projects-title h2,
+.contact-title h2 {
     text-transform: uppercase;
     font-size: 18px;
 }
 
 .about-me-content {
     display: flex;
+    padding-left: 2%;
 }
 
 .about-me-content img {
-    padding-left: 2%;
-border-radius: 10%;
-width: 50%;
-height: 50%;
+    border-radius: 10%;
+    width: 50%;
+    height: 50%; 
+    /* width: 170px;
+    height: 215px; */
+    object-fit: cover;
 }
 
 .about-me-content p {
@@ -89,7 +97,11 @@ height: 50%;
     margin-left: 3%;
 }
 
-.projects {
+
+footer {
     display: flex;
-    width: 100%;
+    justify-content: center;
+    padding: 2%;
+    background-color: #808f85;
+    color: black;
 }
