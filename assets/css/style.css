@@ -29,10 +29,11 @@ header {
     border-bottom: 2px solid var(--dark-brown);
     position: fixed;
     margin-bottom: 2%;
+    z-index: 2;
 }
 
 header h1 {
-    font-size: 200%;
+    font-size: 225%;
     margin: 2%;
 }
 
@@ -117,11 +118,11 @@ main {
 .projects {
     display: flex;
     margin: 2% 2%;
-    padding-bottom: 4%;
-    align-items: center;
+    padding-bottom: 4%; 
     border-bottom: 3px solid var(--dark-pink);
 }
 
+/* Aside section with the title */
 .projects-title {
     display: flex;
     width: 200px;
@@ -136,26 +137,26 @@ main {
     white-space: nowrap;
 }
 
-/* Feature project styling, takes 100% of the screen */
+/* Feature project styling, takes 100% of the section width */
 .feature {
     display: flex;
 }
 
 .feature-project {
     flex: 100%;
-    margin: 0 2%;
+    margin: -8% 2% 0 2%;
 }
 
 .feature-project img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: contain; 
     opacity: 1;
     transition: .5s ease;
 }
 
-/* Non-feature projects, take 50% of the screen */
-.projects-content {
+/* Non-feature projects, take 50% of the section width*/
+.projects-rows {
     display: flex;
 }
 
@@ -167,24 +168,12 @@ main {
     margin: 2%;
 }
 
-.projects-content img {
+.projects-rows img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     opacity: 1;
     transition: .5s ease;
-}
-
-.project-one img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.project-two,
-.project-three,
-.project-four img {
-    object-fit: cover;
 }
 
 /* ALL projects features, name over image and reduced opacity on mouse hover */
@@ -219,12 +208,12 @@ main {
     padding: 5%;
     border-right: 2px solid var(--dark-brown);
     align-self: flex-start;
+    width: fit-content;
 }
 
 .contact-title h2 {
     text-transform: uppercase;
     font-size: 18px;
-    white-space: nowrap;
 }
 
 .contact-content {
@@ -303,9 +292,14 @@ footer {
 
     }
 
+        .projects {
+            padding-bottom: 20%;
+        }
+
     /* Contacts section items change to column direction */
     .contact-content ul {
         flex-direction: column;
+        line-height: 2;
     }
 
 }
