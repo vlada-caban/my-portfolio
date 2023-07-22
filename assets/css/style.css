@@ -237,6 +237,10 @@ main {
     font-size: 120%;
 }
 
+.tech-talent {
+    margin-bottom: 5%;
+}
+
 /* Footer section */
 footer {
     display: flex;
@@ -296,7 +300,7 @@ footer {
 
     }
 
-        .projects {
+    .projects {
             padding-bottom: 20%;
         }
 
@@ -308,6 +312,3 @@ footer {
 
 }
 
-.tech-talent {
-    margin-bottom: 5%;
-}
